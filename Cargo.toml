@@ -1,0 +1,22 @@
+[package]
+name = "tarpc-mqtt-transport"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+paho-mqtt = "0.12.0"
+tokio = { version = "1", features = ["full"] }
+tarpc = { git = "https://github.com/axos88/tarpc.git", branch = "request-context", features = ["full"] }
+#anyhow = "*"
+pin-project = "*"
+futures = "0.3.26"
+serde = "1.0.152"
+serde_json = "1.0.93"
+log = "*"
+rc5 = "*"
+cipher = { version = "0.4.3", features = ["zeroize"] }
+rand = "*"
+thiserror = "*"
