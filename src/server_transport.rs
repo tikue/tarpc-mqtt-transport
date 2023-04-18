@@ -10,6 +10,8 @@ use serde::Serialize;
 use serde::de::DeserializeOwned;
 use log::warn;
 
+pub mod dispatch;
+
 #[pin_project]
 pub struct ServerTransport<Req> {
     #[pin]
